@@ -1,0 +1,237 @@
+{
+    "data": {
+        "analysis": {
+            "education_match": {
+                "candidate": "B.Tech in Computer Science Engineering (ongoing)",
+                "match": true,
+                "required": "B.Tech in Computer Science or related field"
+            },
+            "experience_match": {
+                "candidate_years": "1–2 years (based on internships and contract roles)",
+                "match_percentage": 90,
+                "required_years": "0–2 years"
+            },
+            "matching_keywords": [
+                "Full Stack Developer",
+                "Web and mobile applications",
+                "Scalable applications",
+                "Modern frameworks",
+                "Cloud-based tools",
+                "Real-time systems",
+                "Hyderabad",
+                "Intern",
+                "Entry-Level",
+                "Product engineering team",
+                "PostgreSQL",
+                "Firebase",
+                "React JS",
+                "Next JS",
+                "TypeScript",
+                "NodeJS",
+                "ExpressJS",
+                "Drizzle",
+                "tRPC",
+                "Fastify",
+                "React Native",
+                "Git",
+                "AWS",
+                "Docker",
+                "Blender",
+                "Arduino",
+                "Raspberry PI",
+                "ESP8266"
+            ],
+            "matching_skills": [
+                "React JS",
+                "Next JS",
+                "TypeScript",
+                "NodeJS",
+                "ExpressJS",
+                "PostgreSQL",
+                "Firebase",
+                "Drizzle",
+                "tRPC",
+                "Fastify",
+                "React Native",
+                "Git",
+                "AWS",
+                "Docker",
+                "Blender",
+                "Arduino",
+                "Raspberry PI",
+                "ESP8266"
+            ],
+            "missing_keywords": [
+                "Specific cloud-based tools mentioned in the job description",
+                "Specific real-time systems integration mentioned in the job description"
+            ],
+            "missing_skills": [
+                "Cloud-based tools (specific to the job description)",
+                "Real-time systems integration (specific to the job description)"
+            ],
+            "role_compatibility": {
+                "reasoning": "The candidate has strong experience in full-stack development with relevant technologies such as React, Next.js, Node.js, and PostgreSQL. They have experience in building scalable applications and working with modern frameworks. The candidate's experience in real-time systems and cloud-based tools is partially met. The candidate's education and project experience align well with the job requirements.",
+                "score": 85
+            }
+        },
+        "ats_score": {
+            "ats_compatibility": {
+                "rating": "Unable to analyze"
+            },
+            "improvement_suggestions": [],
+            "overall_score": 0,
+            "score_breakdown": {}
+        },
+        "flashcards": [
+            {
+                "answer": "I have extensive experience with the T3 stack, particularly in my roles at Triark Pvt. Ltd and Celeritaz Health. I designed and developed database schemas using Drizzle ORM, optimized for scalability, and built real-time chat modules using tRPC Subscriptions. I also developed full-stack applications with Next.js and integrated PostgreSQL for robust data processing.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "Can you describe your experience with the T3 stack (Next.js, tRPC, PostgreSQL, and Drizzle)?"
+            },
+            {
+                "answer": "In my role at Triark Pvt. Ltd, I built a real-time chat module using Fastify WebSockets and tRPC Subscriptions, capable of supporting up to 10,000 concurrent users with minimal latency. This involved optimizing the backend to ensure low-latency communication and high scalability.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "How have you handled real-time systems in your previous projects?"
+            },
+            {
+                "answer": "I implemented a dynamic RBAC system at Triark Pvt. Ltd for efficient role and permission management. This involved designing a flexible system that could handle various user roles and permissions, ensuring secure and efficient access control across the application.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "Can you explain your experience with Role-Based Access Control (RBAC) systems?"
+            },
+            {
+                "answer": "I focus on understanding the application's requirements and potential growth. For example, at Triark Pvt. Ltd, I designed a database schema using Drizzle ORM that was optimized for scalability and capable of handling a large user base. I also ensured data integrity and performance by leveraging PostgreSQL's features.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "How do you approach designing scalable database schemas?"
+            },
+            {
+                "answer": "One challenging project was FinHub, a comprehensive financial application. The challenge was integrating multiple features like fraud detection, financial virtual assistants, and market predictions. I overcame this by breaking down the project into smaller modules, using Next.js for the frontend, React Native for mobile, and PostgreSQL for the database, ensuring seamless integration and performance.",
+                "category": "Behavioral",
+                "difficulty": "Hard",
+                "question": "Can you describe a challenging project you worked on and how you overcame the challenges?"
+            },
+            {
+                "answer": "I prioritize security by implementing robust authentication systems, such as NextAuth in my role at Celeritaz Health, and ensuring data integrity through proper database design and ORM usage. I also conduct thorough testing and use secure coding practices to minimize vulnerabilities.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "How do you ensure the security and reliability of the applications you develop?"
+            },
+            {
+                "answer": "I have experience with Firebase, which I used in my roles at Marvix Pvt Ltd and for the Nambi_VJ project. I leveraged Firebase for cloud storage, real-time databases, and authentication, ensuring efficient data management and seamless user experiences.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "Can you explain your experience with cloud-based tools and services?"
+            },
+            {
+                "answer": "I actively participate in hackathons, contribute to open-source projects, and continuously explore new technologies. For example, I completed the GitHub 365 Days Commit Challenge and have worked with various modern frameworks and tools like Next.js, React Native, and Mistral 3B for AI integration.",
+                "category": "Behavioral",
+                "difficulty": "Easy",
+                "question": "How do you stay updated with the latest technologies and trends in full-stack development?"
+            },
+            {
+                "answer": "I developed a cross-platform mobile application for food delivery using React Native at Marvix Pvt Ltd. This involved creating a responsive UI, integrating backend services using Express.js and Firebase, and ensuring smooth user experiences across different platforms.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "Can you describe your experience with mobile application development?"
+            },
+            {
+                "answer": "I have experience working in collaborative environments, such as during my internship at Celeritaz Health, where I worked with a team to develop a responsive application using the T3 stack. I focus on clear communication, setting achievable goals, and leveraging each team member's strengths to ensure project success.",
+                "category": "Behavioral",
+                "difficulty": "Medium",
+                "question": "How do you handle collaboration and teamwork in a project setting?"
+            },
+            {
+                "answer": "I have integrated AI and machine learning in several projects. For example, in FinHub, I used Mistral 3B for chatbot and RAG implementation, and in EONSHIFT, I developed machine learning models for industrial energy conservation. I also used Google Gemini for a custom-trained LLM in NutriSafe.",
+                "category": "Technical",
+                "difficulty": "Hard",
+                "question": "Can you explain your experience with machine learning and AI integration in your projects?"
+            },
+            {
+                "answer": "I break down complex problems into smaller, manageable tasks and prioritize them based on their impact on the project. For instance, in the Hack-Hub project, I integrated an automated grading system using Mistral 3B and ensured seamless cloud storage with Firebase, addressing both functionality and scalability.",
+                "category": "Behavioral",
+                "difficulty": "Medium",
+                "question": "How do you approach problem-solving in complex projects?"
+            },
+            {
+                "answer": "I have experience with IoT and hardware integration, particularly in the Nambi_VJ project, where I used Arduino Uno for environmental data collection and achieved 85% telemetry accuracy up to 800 meters. I also worked with Raspberry Pi and ESP8266 in the EONSHIFT project for remote monitoring and data collection.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "Can you describe your experience with IoT and hardware integration?"
+            },
+            {
+                "answer": "I focus on optimizing database queries, using efficient algorithms, and leveraging modern frameworks and tools. For example, in my role at Triark Pvt. Ltd, I optimized the database schema using Drizzle ORM and ensured the application could handle a large user base with minimal latency.",
+                "category": "Technical",
+                "difficulty": "Medium",
+                "question": "How do you ensure the performance and scalability of the applications you develop?"
+            },
+            {
+                "answer": "I have extensive experience with Git and GitHub, which I used for version control and collaborative development in all my projects. For example, I completed the GitHub 365 Days Commit Challenge, demonstrating my commitment to continuous learning and collaboration.",
+                "category": "Technical",
+                "difficulty": "Easy",
+                "question": "Can you explain your experience with version control and collaborative development?"
+            }
+        ],
+        "insights": {
+            "career_progression": {
+                "current_level": "Junior",
+                "gap_analysis": "The candidate has relevant project experience and technical skills but needs to better highlight quantifiable achievements and tailor the resume to the specific job description. Gaining more experience in real-time systems and cloud-based tools would also be beneficial.",
+                "target_level": "Entry-Level Full Stack Developer"
+            },
+            "recommendations": [
+                {
+                    "category": "Skills",
+                    "priority": "High",
+                    "suggestion": "Highlight specific full-stack development skills and tools that align with the job description, such as real-time systems and cloud-based tools."
+                },
+                {
+                    "category": "Experience",
+                    "priority": "High",
+                    "suggestion": "Quantify achievements where possible, such as 'Improved system performance by 30%' or 'Reduced latency by 20%'."
+                },
+                {
+                    "category": "Formatting",
+                    "priority": "Medium",
+                    "suggestion": "Standardize the use of symbols and formatting for consistency. Use bullet points uniformly and avoid excessive symbols."
+                },
+                {
+                    "category": "Summary",
+                    "priority": "High",
+                    "suggestion": "Create a concise and tailored summary that highlights your full-stack development experience and passion for building scalable applications."
+                },
+                {
+                    "category": "Education",
+                    "priority": "Medium",
+                    "suggestion": "Condense the education section by removing high school details and focusing on relevant degrees and certifications."
+                }
+            ],
+            "resume_improvements": [
+                "Create a clear and concise summary that aligns with the full-stack developer role.",
+                "Quantify achievements in the experience section to demonstrate impact.",
+                "Standardize formatting and use of symbols for better readability.",
+                "Condense the education section to focus on relevant degrees and certifications.",
+                "Highlight specific skills and tools mentioned in the job description, such as real-time systems and cloud-based tools.",
+                "Ensure all sections are relevant and tailored to the full-stack developer role."
+            ],
+            "strengths": [
+                "Strong technical skills in full-stack development with experience in modern frameworks like Next.js, React, tRPC, and PostgreSQL",
+                "Proven experience in building scalable applications and real-time systems",
+                "Demonstrated ability to work on diverse projects, including mobile apps, analytics dashboards, and IoT systems",
+                "Participation in hackathons and competitions, showcasing problem-solving skills and innovation",
+                "Publications and articles that highlight technical expertise and thought leadership",
+                "Volunteering and community involvement, indicating teamwork and leadership potential"
+            ],
+            "weaknesses": [
+                "Resume lacks a clear and concise summary or objective tailored to the full-stack developer role",
+                "Some sections are overly detailed, which may distract from key achievements",
+                "Inconsistent formatting and use of symbols, which can make the resume harder to read",
+                "Lack of quantifiable achievements in some roles, making it difficult to assess impact",
+                "Education section is lengthy and could be condensed for better readability"
+            ]
+        },
+        "resume_preview": "# Yalamanchili Surya Teja \n\n- suryatejayalamanchili@gmail.com 7569847233 ( Hyderabad, India $\\boldsymbol{\\square}$ Yalamanchili Surya Teja (1) teja1103\n* Yalamanchili Surya Teja\n\n\n## Profile\n\nAs a computer science engineering student, I lead the DSS team and drive innovation to solve complicated problems. I actively participate in hackathons to make ideas a reality. As an avid explorer, I continuously acquire new technologies, extending my knowledge.\n\n## Professional Experience\n\n## Contract Developer\n\nHyderabad, India\nTriark pvt. Itd\nTech stack: Next.JS, tRPC, Fastify, PostgreSQL, Bun and Drizzle.\nTasks completed\n\n- Designed and developed the database schema using drizzle ORM for the majority of the application, optimized for scalability and capable of handling a large user base.\n- Built a real-time chat module using Fastify WebSockets and tRPC Subscriptions capable of supporting up to 10,000 concurrent users with minimal latency.\n- Implemented a dynamic Role-Based Access Control (RBAC) system for efficient role and permission management.\n- Developed the complete administration module to ensure smooth operational workflows and system maintenance.\n\n\n## Software Research Intern\n\nHyderabad, India\nSCRC, IIIT-H\nTech stack: React JS, React Three Fiber, FastAPI, PostgreSQL\nTasks completed\n\n- Developed a 3D version of an existing application using Blender and React Three Fiber.\n- Designed and implemented a full-featured application for simulating data transmission from hardware nodes to multiple interoperable platforms.\n\n\n## Contract Developer (Freelance)\n\nHyderabad, India\nMarvix PVT LTD\nTech stack: React JS, Express JS, Firebase, React Native, Next JS\nTasks completed\n\n- Developed a fully functional cross-platform mobile application for the purpose of food delivery using React Native.\n- Developed a scalable backend using Express JS and Firebase levaraging its non relational functionalities\n- Developed an analytics dashboard in Next JS for the admin to monitor and organize the orders\n\n\n## Full Stack Development intern\n\nHyderabad, India\nCeleritaz Health\nTech stack: Next.JS, tRPC, PostgreSQL, and Drizzle.\nTasks completed\n\n- Collaborated to create a responsive application using the $\\mathbf{t 3}$ stack, improving user experience and performance.\n- Using Drizzle and PostgreSQL, we designed a robust database structure for reliable data processing, significantly increasing data retrieval speed and security.\n- Part of the team that developed and integrated Authentication system using NEXT AUTH\n\n\n## Skills\n\nProgramming Languages:-: C | Java | Python\nFrontend: HTML,CSS | JavaScript,TypeScript | React JS | Next JS | React Native\nBackend: NodeJS | Bun | ExpressJS | tRPC | Fastify | Flask | FastAPI\nDatabase: PostgreSQL | Firebase | MySQL\nTools: Git | AWS | Docker | Blender\nORM: Drizzle | Prisma | Sqlalchemy\nIoT: Arduino | Raspberry PI | ESP8266\nAwards\nIIIT-HYDERABAD MEGATHON 3RD PRIZE WINNER ..... 2023\nIIIT Hyderabad\nBest Design in all categories for ASI CANSAT competition ..... 2024\nASI, ISRO, InSpace\nGitHub 365 DAYS COMMIT CHALLENGE ..... 2025\ngithub\nSMART INDIA HACKATHON GRAND FINALIST ..... 2023\nMinistry of Education\nEducation\nB.Tech (CSE) ..... 2021 - present\nVidya Jyothi Institute of Technology ..... Hyderabad, India\nPercentage:- $80 \\%$\nIntermediate ..... 2019 - 2021\nNarayana Junior Collge ..... Hyderabad, India\nPercentage:- $80 \\%$\nHigh School Education ..... 2007 - 2019\nInternational School ..... Hyderabad, India\nPercentage:- $91 \\%$\nProjects\nFinHub ..... 01/2025 - 02/2025\nFinHub is a one stop app for all your financial needs consisting of features such as fraud detection, FVC (Financial Virtual Assistant), crypto and stock market predictions,etc,\nTechnologies used:-\n\n- Next JS - web application frontend\n- React Native - mobile application UI\n- Next JS - backend APIs\n- PostgreSQL - Relational Database\n- Mistral 3B - LLM for chat not and RAG implementation\n- Python Libraries - scikit-learn\nHack-Hub ..... 09/2024 - 10/2024\nHack-Hub is a platform for hosting hackathons, featuring an integrated automated grading system and a cloud storage solution.\nTechnologies Used:\n- Next.js (TypeScript)\n- TailwindCSS\n- Firebase\n- Flask\n- Mistral 3B (For automated grading system)\nNambi_VJ $\\varnothing$ ..... $11 / 2022$ - 04/2024\nDeveloped a CanSat project leveraging Arduino Uno for environmental data collection, achieving $85 \\%$ telemetry accuracy up to 800 meters.\n- Ground Station Development:\n- Built with Next.js (TypeScript) for a responsive user interface.\n- Integrated Firebase for efficient cloud storage and data management.\nNutriSafe $\\varnothing$ ..... $12 / 2023$ - 01/2024\nCreated NutriSafe, a Next.JS-based nutrition management system with features including:\n- Meal planning\n- Recipe generation\n- Custom-trained LLM using Google Gemini\nEONSHIFT $\\varnothing$ ..... 09/2023 - 12/2023\nEonshift, an economical AI system for industrial energy conservation\nSoftware System:-\n- Next.JS(Typescript) for frontend\n- Python for machine learning models.\nHardware System:\n- Raspberry Pi as the central node\n- ESP8266 microcontrollers including voltage sensors and relay modules.\nEnabled remote monitoring, data collection, and automated equipment control, achieving $\\mathbf{7 5 \\%}$ accuracy and significant energy cost reductions.\nCustom Certificate Generator $\\sigma$\nA QR code validated custom cetificate generator developed for the clubs DSS and GDSC.\nTechnologies used:-\n\n- React JS\n- Express JS\n- Firebase\n\nThe application creates and stores custom certificates in the Firebase storage and the certificates can be validated using a QR code.\nE-COrP\n$11 / 2023-11 / 2023$\nE-Corp \"Estimation and Cultivation of Paddy\" project at the IIIT-H Megathon 2023:\nTechnology Used:\n\n- Google Earth and satellite imagery\n- ML model for yield estimation\n- CNN-based deep learning model for harvest time and fake paddy forecast with $90 \\%$ accuracy\n\nLeveraged satellite imagery and machine learning algorithms to accurately predict crop yields, optimizing harvest schedules, and increasing overall farm productivity by $\\mathbf{2 5 \\%}$\n\n# Online IDE \n\nDesigned and implemented an online code compiler using React and TypeScript, with an aesthetic touch achieved through Daisy UI and Tailwind CSS. Integrated seamless code compilation functionality using the Online Code Compiler API .\n\n## Neau\n\nNeua is a modern age ai integrated hiring platform with functionalities such as ats, ai assisted mock interviews, ai assissted skill building modules and communication modules\nTechnologies used:-\n\n- NEXT JS\n- PostgreSQL\n- Prisma ORM\n- Mistral model suite\n\n\n## Publications/Articles\n\nDesign of CANSAT for Air Quality Monitoring for an altitude of 900 meters $\\sigma$\nPublished a research paper on the design and development of the CANSAT for air quality stabilization and monitoring, NAMBI-VJ. The small cylindrical shape of the satellite, its use of a mechanical gyroscope for stability, and its Zigbee data transmission system are all discussed in the study. Its use in environmental monitoring was demonstrated by the successful testing at 900 meters of key air quality metrics as PM and CO2.\n\n## How to start learning React? Why to start learning React? $\\sigma$\n\nWrote an interesting article in medium focusing on React.js and fundamental foundations of web development such as HTML, CSS, and JavaScript. Advanced subjects such as hoisting and closures were explored, with a focus on DOM, Web APIs, asynchronous programming, ES6, Git, GitHub, and npm. Provided a simple method for creating a React project using Vite and npm, concluding with the benefits of learning React, such as scalability, Virtual DOM, reusable components, and a helpful community.\n\n## Optimizing Communication: A Ground Station Subsystem for CANSAT Operations $\\sigma$\n\nWrote an article outlining a CANSAT's and its ground station's function in satellite missions. Discussed important subjects such the significance of a ground station, the function of a student studying software engineering in a CANSAT team, and the goals taken into account when developing a ground station. Also offered guidance on how to establish a real-time CANSAT ground station and design the system architecture.\n\n## Certificates\n\nNPTEL (IIT KANPUR)\nC PROGRAMMING\nGOOGLE DSC\nOPENCV\n\nMICROSOFT LEARN\nJAVASCRIPT\nMAKE SKILLED\nIOT\n\n## Volunteering\n\nNSS\nVolunteer\nDevelopers Student Society\nCommunity Lead\n\nLINKEDIN LEARNING\nREACT JS\n\n2021 - 2023"
+    },
+    "success": true
+}

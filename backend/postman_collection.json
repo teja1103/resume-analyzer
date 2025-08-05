@@ -1,0 +1,308 @@
+{
+    "info": {
+        "name": "Resume Analysis API",
+        "description": "Comprehensive resume analysis API using Mistral AI for ATS scoring, skill matching, insights, and interview preparation.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "version": "1.0.0"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5000",
+            "type": "string"
+        }
+    ],
+    "item": [
+        {
+            "name": "Health Check",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/health",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "health"
+                    ]
+                },
+                "description": "Check if the Resume Analysis API service is running and healthy."
+            },
+            "response": [
+                {
+                    "name": "Health Check Success",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/health",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "health"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n    \"status\": \"healthy\",\n    \"service\": \"Resume Analysis API\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Analyze Resume",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "resume",
+                            "type": "file",
+                            "src": [],
+                            "description": "PDF file of the resume to analyze"
+                        },
+                        {
+                            "key": "job_description",
+                            "value": "We are seeking a skilled Python Developer with 3+ years of experience in backend development. The ideal candidate should have:\n\n- Strong proficiency in Python and Flask/Django\n- Experience with RESTful API development\n- Knowledge of SQL databases (PostgreSQL, MySQL)\n- Familiarity with cloud platforms (AWS, GCP, Azure)\n- Understanding of containerization (Docker)\n- Experience with version control (Git)\n- Strong problem-solving skills\n- Bachelor's degree in Computer Science or related field\n\nResponsibilities:\n- Develop and maintain backend services\n- Design and implement APIs\n- Collaborate with frontend developers\n- Write clean, maintainable code\n- Participate in code reviews\n- Debug and troubleshoot applications\n\nNice to have:\n- Experience with microservices architecture\n- Knowledge of DevOps practices\n- Familiarity with machine learning libraries\n- Agile development experience",
+                            "type": "text",
+                            "description": "Job description text to match against the resume"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/analyze-resume",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "analyze-resume"
+                    ]
+                },
+                "description": "Upload a resume PDF and job description to get comprehensive analysis including:\n- Skill matching and gaps\n- ATS compatibility score\n- Career insights and recommendations\n- Interview preparation flashcards\n- Resume improvement suggestions"
+            },
+            "response": [
+                {
+                    "name": "Successful Analysis",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "resume",
+                                    "type": "file",
+                                    "src": "sample_resume.pdf"
+                                },
+                                {
+                                    "key": "job_description",
+                                    "value": "Python Developer position with Flask experience required...",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/analyze-resume",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "analyze-resume"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n    \"success\": true,\n    \"data\": {\n        \"analysis\": {\n            \"matching_skills\": [\"Python\", \"Flask\", \"API Development\", \"Git\"],\n            \"missing_skills\": [\"Docker\", \"AWS\", \"PostgreSQL\"],\n            \"matching_keywords\": [\"backend\", \"development\", \"python\", \"api\"],\n            \"missing_keywords\": [\"cloud\", \"containerization\", \"microservices\"],\n            \"experience_match\": {\n                \"required_years\": \"3+ years\",\n                \"candidate_years\": \"4 years\",\n                \"match_percentage\": 85\n            },\n            \"education_match\": {\n                \"required\": \"Bachelor's in Computer Science\",\n                \"candidate\": \"BS Computer Science\",\n                \"match\": true\n            },\n            \"role_compatibility\": {\n                \"score\": 78,\n                \"reasoning\": \"Strong technical foundation with relevant Python and Flask experience. Missing some cloud and DevOps skills.\"\n            }\n        },\n        \"insights\": {\n            \"strengths\": [\"Strong Python programming skills\", \"Solid backend development experience\", \"Good understanding of API design\"],\n            \"weaknesses\": [\"Limited cloud platform experience\", \"No containerization experience\", \"Missing database optimization skills\"],\n            \"recommendations\": [\n                {\n                    \"category\": \"Technical Skills\",\n                    \"suggestion\": \"Gain hands-on experience with Docker and containerization\",\n                    \"priority\": \"High\"\n                },\n                {\n                    \"category\": \"Cloud Platforms\",\n                    \"suggestion\": \"Complete AWS or GCP certification\",\n                    \"priority\": \"High\"\n                }\n            ],\n            \"career_progression\": {\n                \"current_level\": \"Mid\",\n                \"target_level\": \"Senior\",\n                \"gap_analysis\": \"Need to develop cloud architecture skills and gain experience with scalable systems\"\n            },\n            \"resume_improvements\": [\n                \"Add specific metrics to quantify achievements\",\n                \"Include cloud platform projects or certifications\",\n                \"Highlight leadership or mentoring experience\"\n            ]\n        },\n        \"flashcards\": [\n            {\n                \"question\": \"Explain your experience with Flask framework and how you've used it in projects\",\n                \"answer\": \"Based on your resume, you can discuss your Flask API development experience, focusing on RESTful services and database integration.\",\n                \"category\": \"Technical\",\n                \"difficulty\": \"Medium\"\n            },\n            {\n                \"question\": \"How do you handle error handling and validation in your Python applications?\",\n                \"answer\": \"Describe your approach using try-except blocks, custom exceptions, and input validation techniques you've implemented.\",\n                \"category\": \"Technical\",\n                \"difficulty\": \"Medium\"\n            }\n        ],\n        \"ats_score\": {\n            \"overall_score\": 82,\n            \"score_breakdown\": {\n                \"keyword_match\": {\n                    \"score\": 75,\n                    \"max_score\": 100,\n                    \"details\": \"75% of required keywords found in resume\"\n                },\n                \"skills_match\": {\n                    \"score\": 80,\n                    \"max_score\": 100,\n                    \"details\": \"Good alignment of technical skills with job requirements\"\n                },\n                \"experience_relevance\": {\n                    \"score\": 90,\n                    \"max_score\": 100,\n                    \"details\": \"Experience highly relevant to the role requirements\"\n                },\n                \"format_optimization\": {\n                    \"score\": 85,\n                    \"max_score\": 100,\n                    \"details\": \"Resume format is ATS-friendly with clear sections\"\n                }\n            },\n            \"improvement_suggestions\": [\n                {\n                    \"area\": \"Keywords\",\n                    \"suggestion\": \"Add 'microservices', 'cloud architecture', 'DevOps' keywords\",\n                    \"impact\": \"High\"\n                },\n                {\n                    \"area\": \"Skills Section\",\n                    \"suggestion\": \"Include specific database technologies and cloud platforms\",\n                    \"impact\": \"Medium\"\n                }\n            ],\n            \"ats_compatibility\": {\n                \"rating\": \"Good\",\n                \"key_issues\": [\"Missing some industry-standard keywords\", \"Could benefit from more quantified achievements\"],\n                \"optimization_tips\": [\"Use standard section headers like 'Experience', 'Skills', 'Education'\", \"Include relevant certifications in a dedicated section\"]\n            }\n        },\n        \"resume_preview\": \"John Doe\\nSoftware Developer\\n\\nExperience:\\n- 4 years of Python development\\n- Flask framework expertise\\n- RESTful API design and implementation\\n- Git version control\\n\\nEducation:\\n- BS Computer Science, State University\\n\\nSkills:\\n- Python, Flask, JavaScript, HTML/CSS\\n- MySQL, MongoDB\\n- Git, GitHub\\n- Problem-solving, teamwork...\"\n    }\n}"
+                },
+                {
+                    "name": "Error - No Resume File",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "job_description",
+                                    "value": "Python Developer position...",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/analyze-resume",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "analyze-resume"
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n    \"error\": \"No resume file provided\"\n}"
+                },
+                {
+                    "name": "Error - Invalid File Format",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "resume",
+                                    "type": "file",
+                                    "src": "resume.txt"
+                                },
+                                {
+                                    "key": "job_description",
+                                    "value": "Python Developer position...",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/analyze-resume",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "analyze-resume"
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n    \"error\": \"Only PDF files are supported\"\n}"
+                },
+                {
+                    "name": "Error - Missing Job Description",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "resume",
+                                    "type": "file",
+                                    "src": "resume.pdf"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/analyze-resume",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "analyze-resume"
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n    \"error\": \"No job description provided\"\n}"
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    "// Pre-request script for Resume Analysis API",
+                    "console.log('Making request to Resume Analysis API...');",
+                    "",
+                    "// Set timestamp for request tracking",
+                    "pm.globals.set('requestTimestamp', new Date().toISOString());"
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    "// Common tests for all endpoints",
+                    "pm.test('Response time is less than 30s', function () {",
+                    "    pm.expect(pm.response.responseTime).to.be.below(30000);",
+                    "});",
+                    "",
+                    "pm.test('Response has correct Content-Type', function () {",
+                    "    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');",
+                    "});",
+                    "",
+                    "// Specific tests based on endpoint",
+                    "if (pm.request.url.path.includes('health')) {",
+                    "    pm.test('Health check returns healthy status', function () {",
+                    "        const response = pm.response.json();",
+                    "        pm.expect(response.status).to.equal('healthy');",
+                    "        pm.expect(response.service).to.equal('Resume Analysis API');",
+                    "    });",
+                    "}",
+                    "",
+                    "if (pm.request.url.path.includes('analyze-resume')) {",
+                    "    if (pm.response.code === 200) {",
+                    "        pm.test('Analysis response has required structure', function () {",
+                    "            const response = pm.response.json();",
+                    "            pm.expect(response).to.have.property('success', true);",
+                    "            pm.expect(response).to.have.property('data');",
+                    "            pm.expect(response.data).to.have.property('analysis');",
+                    "            pm.expect(response.data).to.have.property('insights');",
+                    "            pm.expect(response.data).to.have.property('flashcards');",
+                    "            pm.expect(response.data).to.have.property('ats_score');",
+                    "        });",
+                    "        ",
+                    "        pm.test('ATS score is within valid range', function () {",
+                    "            const response = pm.response.json();",
+                    "            const atsScore = response.data.ats_score.overall_score;",
+                    "            pm.expect(atsScore).to.be.at.least(0);",
+                    "            pm.expect(atsScore).to.be.at.most(100);",
+                    "        });",
+                    "    }",
+                    "}"
+                ]
+            }
+        }
+    ]
+}
