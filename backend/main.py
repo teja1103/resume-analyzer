@@ -17,7 +17,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration
-MISTRAL_API_KEY = os.getenv('MISTRAL_API_KEY', 'gJJQYXBmu4fART5bExW1VggbcX32Xgq8')
+MISTRAL_API_KEY = os.getenv('MISTRAL_API_KEY', 'YOUR_API_KEY')
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 CLOUDINARY_CLOUD_NAME = "dplpfiymx"
 CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY', '275921294689971')
