@@ -17,11 +17,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration
-MISTRAL_API_KEY = os.getenv('MISTRAL_API_KEY', 'YOUR_API_KEY')
+MISTRAL_API_KEY = os.getenv('MISTRAL_API_KEY', 'YOUR_MISTRAL_API_KEY')
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 CLOUDINARY_CLOUD_NAME = "dplpfiymx"
-CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY', '275921294689971')
-CLOUDINARY_API_SECRET_KEY = os.getenv('CLOUDINARY_API_SECRET_KEY', '5hjYcfm2k8C1lPaD2vtnUsJ315E')
+CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY', 'YOUR_CLOUDINARY_API_KEY')
+CLOUDINARY_API_SECRET_KEY = os.getenv('CLOUDINARY_API_SECRET_KEY', 'YOUR_CLOUDINARY_API_SECRET_KEY')
 
 # Configure Cloudinary
 cloudinary.config(
@@ -438,7 +438,9 @@ def analyze_resume():
                     "resume_preview": resume_text
                 }
             }
-            
+
+            print("Analysis completed successfully:", result)
+
             return jsonify(result), 200
             
         except Exception as e:
@@ -473,7 +475,7 @@ if __name__ == '__main__':
     # Ensure API key is set
     # print("Mistral API Key:", MISTRAL_API_KEY)
     if not MISTRAL_API_KEY or MISTRAL_API_KEY != 'YOUR_MISTRAL_API_KEY':
-        print("Condition result 1:", MISTRAL_API_KEY == 'YOUR_MISTRAL_API_KEY')
+        # print("Condition result 1:", MISTRAL_API_KEY == 'YOUR_MISTRAL_API_KEY')
         print("Warning: MISTRAL_API_KEY not set. Please set your Mistral API key.")
     
     app.run(debug=True, host='0.0.0.0', port=5000)
